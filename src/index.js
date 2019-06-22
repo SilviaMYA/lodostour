@@ -1,13 +1,21 @@
-import React from 'react';
+//Dependences
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
-import Header from './Components/Header/header.js'
+//Componenets
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
+import Content from './Components/Content/Home'
 
+//Data
+import items from '../src/data/menu'
 
-const element = <h1>Hello LodosTour!</h1>;
-ReactDOM.render(element, document.getElementById('root')); //id in public/index.html
+import * as serviceWorker from './serviceWorker';
 
-
-
-  
+const element =  
+    <div> 
+        <Header title="Lodostour" items={items}/>
+        <Content /> 
+        <Footer />
+    </div>;
+ReactDOM.render(element, document.getElementById('index')); //id in public/index.html

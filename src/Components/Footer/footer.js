@@ -1,17 +1,23 @@
+//Depedencies
 import React, {Component} from 'react';
+import PropTypes from 'prop-types'
+
 //import {Link} from 'react-router'
 //import {Footer} from 'react-materialize';
-import 'App.css'
+// import '../css/App.css'
+//import '../css/footer.css'
 
-
-class RT_Footer extends Component{
+class Footer extends Component{
+  static propTypes = {
+    copyright: PropTypes.string
+  };
   render(){
+    const {copyright = "&copy; Lodostour 2019"} = this.props;  // const copyright = this.props; 
     return (
     <div>
-        I am the footer....
-      
+      <p dangerouslySetInnerHTML={{ __html: copyright }} />
     </div>
     );
   }
 }
-export default RT_Footer;
+export default Footer;
