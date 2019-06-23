@@ -14,7 +14,7 @@ import * as serviceWorker from './serviceWorker';
 
 const element =  
     <div> 
-        <Header title="Lodostour" items={items}/>
+        <Header title="LodosTour" items={items}/>
         <Content /> 
         <Footer />
     </div>;
