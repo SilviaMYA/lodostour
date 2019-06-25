@@ -9,7 +9,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 80px;
+    z-index: 1;
+    min-height: 60px;
+    padding-top: 0;
 }
 
 .toolbar__logo a{
@@ -65,10 +68,11 @@
     flex: 1;
 }
 
-img{
+.toolbar__logo img{
     pointer-events: none;
     width: 100px;
     height: 50px;
+    margin-top: 20px;
 
     position: relative;
     -webkit-animation: mymove infinite; /* Safari 4.0 - 8.0 */

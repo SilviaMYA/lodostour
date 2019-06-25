@@ -1,15 +1,35 @@
 .main_home{
     min-height: 350px;
-    margin: 8rem 2rem;
+    margin: 6rem 2rem;
     position: relative;
+    background-color: darkkhaki;
 }
 
 .triangle{
     clear: none;
-    top: 100px;
+    top: 80px;
     z-index: 999;
-    border-left: 600px outset transparent;
-    border-right: 600px outset transparent;
+    border-left: 625px outset transparent;
+    border-right: 625px outset transparent;
     border-top: 30px solid #335b3e;
     position: relative;
+}
+
+.carousel{
+    margin-top: 104px;
+    z-index: 0;
+}
+
+
+.carousel img{
+    height: 400px;
+    width: 60%;
+    float: right;
+}
+
+.div_carousel{
+    background: url('../images/carousel_bkg.jpeg');
+    background-size:contain;
+    background-position:top;
+    background: cover;
 }
