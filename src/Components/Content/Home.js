@@ -1,47 +1,32 @@
-//Dependencies
-import 'bootstrap/dist/css/bootstrap.css';
-import React, {Component} from "react";
-import ReactDOM from "react-dom";
-import ReactBootstrapCarousel from "react-bootstrap-carousel";
+// Dependencies
+import React, { Component } from 'react';
 
-import { Button, CardImg } from 'reactstrap';
+//Assets
+import '../../css/home.css';
+import '../../css/App.css';
+
+
 
 //Component
-//import Carousel from "../../Carousel-old"
-//import Carousel from "Carousel"
 import Carousel from './Carousel/Carousel'
 
 
-//APIs
-//import Carousel from '../../react-bootstrap/Carousel';
-
-//import createReactclassName from 'create-react-className';
-//Assets
-import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
-import 'bootstrap/dist/css/bootstrap.css';
-import '../css/home.css'
-
-
-require('bootstrap')
-
-
-const Home = propos =>  (
-  <div>
-    <div className="div_carousel">
-      <div className="triangle"></div>
-      <Carousel className="carousel "/>
-    </div>
-    <div className="main_home">
-      <p className="body_home">
-        I am the body
-        <span className="btn btn-lg btn-dangerous"> boo</span>
-      </p>
-    </div>
-  </div>
-
-      );
-
+class Home extends Component {
+  render() {
+    return (
+        <div className="body_content">
+            <div className="div_carousel">
+                <Carousel className="carousel "/>
+            </div>
+                
+            <div className="home_page">
+                <h1 className="wheat_color">
+                    Welcome to <i>LodosTour</i>!
+                </h1>
+            </div>
+        </div>
+    );
+  }
+}
 
 export default Home;
-
-      

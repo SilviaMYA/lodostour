@@ -1,0 +1,116 @@
+body{
+  font-size: 1.5rem !important;
+}
+.container-fluid{
+  padding: 0 !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.green_background{
+  background-color: #335b3e;
+}
+
+.green_color{
+  color: #335b3e;
+}
+
+.wheat_color{
+  color: wheat;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*****************************/
+/*for all of pages*/
+/*****************************/
+.body_content{
+  background-color: darkkhaki;
+  min-height: 429px;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+/*****************************/
+/*common general styles*/
+/*****************************/
+.padding_top_50{
+  padding-top: 50px;
+}
+
+.marging_top_30{
+  margin-top: 30px;
+}
+
+.with_100{
+  width: 100% !important;
+}
+
+input{
+  margin: 10px !important;
+}
+
+.not_padding_left{
+  padding-left: 0;
+}
+
+.not_padding_right{
+  padding-right: 0;
+}
+
+.not_padding_sides{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.not_margin_sides{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+
+input[type=text], input[type=phone], input[type=email], select {
+  width: 100% !important; 
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  /* display: inline-block; */
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+input[type=text]:hover, input[type=phone]:hover, input[type=email]:hover, textarea:hover{
+  background-color: darkkhaki;
+}

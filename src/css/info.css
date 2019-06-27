@@ -1,0 +1,53 @@
+
+/*********************/
+/* style for page404 */
+/**********************/
+.logo img{
+    pointer-events: none;
+    margin-top: 20px;
+
+    position: relative;
+    -webkit-animation: mymove infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation: mymove infinite;
+    animation-duration: 6s;
+}
+
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 50px;}
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 50px;}
+  }
+
+
+/*******************************/
+/*  contact page               */
+/*******************************/
+  .animated_contact {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+  .form_contact{
+      background-color: #cee2b0;
+  }
+
+  .form_contact form{
+      padding: 50px;
+  }
+
+  

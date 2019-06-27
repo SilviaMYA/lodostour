@@ -7,7 +7,6 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
-import PropTypes from 'prop-types'
 
 //Assets
 import slider_img1 from '../../images/slider-1.jpg'
@@ -21,21 +20,24 @@ const items = [
   {
     src: slider_img1,
     altText: 'Slide 1',
-    caption: 'Slide 1'
+    caption: 'Discover Lodostour',
+    content: 'Site to discover small horizons'
   },
   {
     src: slider_img2,
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'Explore Lodostour',
+    content: 'Place to explore new horizons'
   },
   {
     src: slider_img3,
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'Love Lodostour',
+    content: 'Way to love authentic horizons'
   }
 ];
 
-class Example extends Component {
+class MyCarousel extends Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -81,8 +83,8 @@ class Example extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} className="rounded-circle"/>
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <img src={item.src} alt={item.altText} className="img-responsive rounded-circle"/>
+          <CarouselCaption className="left" captionText={item.content} captionHeader={item.caption} />
         </CarouselItem>
       );
     });
@@ -103,4 +105,4 @@ class Example extends Component {
 }
 
 
-export default Example;
+export default MyCarousel;

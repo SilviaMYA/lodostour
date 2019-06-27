@@ -1,15 +1,31 @@
-import 'bootstrap/dist/css/bootstrap.css';
+//Dependencies
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+//Routes
+import AppRoutes from './routes';
+
+  render(
+    <Router>
+      <AppRoutes />
+    </Router>,
+    document.getElementById('index')
+  );
+
+
+
+/*import 'bootstrap/dist/css/bootstrap.css';
 //import './reactstrap.min.js'
 //Dependences
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-
+import { BrowserRouter, Route } from 'react-router-dom';
 
 //Componenets
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
-import Content from './Components/Content/Home'
+import Home from './Components/Content/Home'
 
 
 //Data
@@ -20,8 +36,9 @@ import * as serviceWorker from './serviceWorker';
 const element =  
     <div> 
         <Header title="LodosTour" items={items}/>
-        <Content /> 
+        <Home /> 
         <Footer />
-    </div>;
-ReactDOM.render(element, document.getElementById('index')); //id in public/index.html
 
+    </div>;
+//ReactDOM.render(element, document.getElementById('index')); //id in public/index.html
+*/

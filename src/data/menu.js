@@ -3,10 +3,7 @@ export default[
         title: 'Home',
         url: '/'
     },
-    {
-        title: 'Places',
-        url: '/places'
-    },
+    
     {
         title: 'About',
         url: '/about'
@@ -14,5 +11,9 @@ export default[
     {
         title: 'Contact',
         url: '/contact'
-    }
+    },
+    {
+        title: 'Places',
+        url: '/places'
+    },
 ]

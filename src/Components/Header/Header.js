@@ -1,12 +1,13 @@
 //Dependencies
-import React, {Component}from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 //Assets
 //import 'bootstrap/dist/css/bootstrap.css';
-import "../css/header.css";
+import "../../css/header.css";
 import small_logo from '../images/small_logo.PNG'
+//import Contact from "../Info/Contact";
 
 
 class Header extends Component{
@@ -17,7 +18,7 @@ class Header extends Component{
     render(){
         const {title, items} = this.props;  // const logo = this.props;  const items = this.props;
       return (     
-
+        <div className="container-fluid">
          <header className="green_background toolbar">
               <nav className="toolbar__navigation">
                   <div></div>
@@ -28,17 +29,23 @@ class Header extends Component{
                       </a>
                       </div>
                   <div className="space"></div>
-                  <div className="toolbar__navigation_items">
+                  <div className="toolbar__navigation_items ">
+
                     <ul>
-                        {items && items.map((item, key) => <li key={key}>{item.title}</li>)}
+                        {
+                            items && items.map(
+                                (item, key) => <li key={key}> <Link to={item.url} >{item.title}</Link></li>
+                            )
+                        }
                     </ul> 
                   </div>
               </nav>
           </header>
-    
-      );
-    }
+          </div>
+    );
+}
   }
+//<Link to={Contact}>Contact</Link>
 
 /*
 const header = propos =>  (
@@ -91,4 +98,10 @@ const header = propos =>  (
 
 export default Header;
 
-      
+//(item, key) => <li key={key}><Link to={item.url}>{item.title}</Link></li>)}
+/*import { BrowserRouter, Route, Link } from 'react-router-dom';
+(item, key) => <li key={key}>
+    <BrowserRouter>
+        <Link to={item.url}>{item.title}</Link>)}
+    </BrowserRouter>
+    </li>*/
