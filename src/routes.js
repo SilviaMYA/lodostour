@@ -8,7 +8,8 @@ import Home from './Components/Content/Home'
 import About from './Components/Info/About'
 import Contact from './Components/Info/Contact'
 import Page404 from './Components/Info/Page404'
-
+// import insertContactForm from './insertContactForm'
+// /insertContactForm
 
 
 const AppRoutes = () => 
@@ -18,6 +19,7 @@ const AppRoutes = () =>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
+        {/* <Route exact path="/insertContactForm" component={insertContactForm} /> */}
         <Route component={Page404} />
     </Switch>
 </App>

@@ -18,7 +18,6 @@ import PropTypes from 'prop-types'
 import '../../css/App.css'
 import '../../css/animate.css'
 
-
 class Content extends Component{
   static propTypes = {
     body: PropTypes.object.isRequired
@@ -28,9 +27,9 @@ class Content extends Component{
     const { body} = this.props;
 
     return (
-      <div className="Content container-fluid">
-        <div className="triangle"></div>
-        <div>
+      <div className="Content ">
+        <div className="triangle col-xs-12"></div>
+        <div className="padding_top_50" >
           {body}
         </div>
       </div>

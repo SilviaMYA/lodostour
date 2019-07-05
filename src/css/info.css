@@ -2,7 +2,7 @@
 /*********************/
 /* style for page404 */
 /**********************/
-.logo img{
+.logo img {
     pointer-events: none;
     margin-top: 20px;
 
@@ -42,12 +42,47 @@
     animation-duration: 1s;
   }
 
+
+  .body_contact{
+    margin: 0 65px;
+  }
+
   .form_contact{
       background-color: #cee2b0;
   }
 
+  .div_form{
+    padding: 0 40px 0 0;
+  }
+
+  .form_contact .form-control,  .form_contact .btn{
+    font-size: 1.5rem;
+  }
+
   .form_contact form{
-      padding: 50px;
+      padding: 25px;
   }
 
   
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .form_contact form{
+      padding: 5px;
+    }
+    .body_contact{
+      margin: 0;
+    }
+
+    .div_form{
+      padding: 0;
+    }
+    .map_contact{
+      margin-top: 20px;
+      padding: 0;
+      margin-left: 0px;
+    }
+  }

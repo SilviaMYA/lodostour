@@ -6,7 +6,6 @@
     margin: 0;
     list-style: none;
     display: inline-flex;
-    color:  #335b3e;
 }
 
 .social_media ul li{
@@ -25,9 +24,7 @@
 
 
 hr{
-    width: 650px;
     background-color: #335b3e;
     height: 1px !important;
     margin-top: 5px !important;
-    
 }

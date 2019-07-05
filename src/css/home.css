@@ -14,11 +14,10 @@
 }
 
 
-.carousel img{
-    height: 400px;
-    width: 60%;
+.carousel img, #background-video{
     float: right;
     margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .div_carousel{
@@ -28,19 +27,26 @@
 }
 
 .div_carousel h3{
-    margin-top: 0px;
-    font-size: 4rem !important;
-    margin-right: 450px;
+  font-size: 4rem !important;
 }
 .div_carousel p{
-    margin-top: 222px;
+    /* margin-top: 222px;
     font-size: 2rem !important;
+    margin-right: 0px; */
 }
+
 .div_carousel h3, .div_carousel p{
     float: left;
     color: #335b3e;
     
 }
+
+.carousel-indicators li, .carousel-indicators li{
+  background-color: gray !important;
+}
+
+
+
 
 
 /******************************************/
@@ -49,12 +55,12 @@
 
 .triangle{
     clear: none;
-    top: 70px;
-    z-index: 0;
+    top: 67px;
+    z-index: 1;
     border-left: 625px outset transparent;
     border-right: 625px outset transparent;
     border-top: 30px solid #335b3e;
-    position: relative;
+    position: relative; 
 }
 
 
@@ -62,3 +68,142 @@
     min-height: 300px;
     padding-top: 100px;
 }
+
+.black_background{
+  background-color: black;
+}
+
+.link{
+  text-decoration: none !important;  
+}
+
+
+.thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.div_transaction {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+ }
+
+.thumbnail:hover .div_transaction {
+  top: 0;
+  height: 61%;
+  width: 86%;
+  
+}
+
+.div_transaction {
+  top: 0;
+  width: 86%;
+  margin-left: 20px;  
+}
+
+
+.div_transaction .glyphicon-plus {
+  white-space: nowrap; 
+  color: white;
+  font-size: xx-large;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+}
+
+/***********************************/
+/*   media query                   */
+/* *********************************/
+
+  /* Device = Desktops
+  Screen = 1281px to higher resolution desktops */
+@media (min-width: 1281px) {
+    
+  }
+  
+
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  }
+  
+
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) {
+      
+  }
+  
+
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  }
+  
+
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+  }
+  
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .triangle{
+        border-left: 150px outset transparent;
+        border-right: 150px outset transparent;
+    }
+
+    /* carousel */
+    .carousel{
+      margin-top: 30px;
+  }
+  
+  .carousel img, #background-video{
+      float: none;
+      margin-right: 0px;
+  }
+
+  /* en carousel */
+
+    .thumbnail:hover .div_transaction {
+      height: 75%;
+      width: 88%;
+      
+    }
+    
+    .div_transaction {
+      width: 88%; 
+    }
+    
+  }
+
+
+
+
