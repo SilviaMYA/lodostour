@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App].
+This is my first project in react, it was created using [Create React App] and the following technologies:
+
+FRONTEND:
+React, React Router, CSS, Bootstrap,...
+
+BACKEND:
+Node.js, Axios, Express
+
+API's
+Google Maps and Weather
+
+DATABASE:
+MongoDB
 
 ## Available Scripts
 
