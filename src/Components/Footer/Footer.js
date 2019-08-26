@@ -2,18 +2,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 
-//import {Link} from 'react-router-dom'
-//import {Footer} from 'react-materialize';
-// import '../css/App.css'
-
-//import Foot from '../Footer/Footer'
-
 //Assets
 import '../../css/footer.css'
 import facebook_icon from '../../images/icons/facebook_1.png'
 import linkedin_icon from '../../images/icons/linkedin.png'
 import youtube_icon from '../../images/icons/youtube.png'
-
 
 
 class Footer extends Component {

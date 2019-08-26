@@ -12,4 +12,4 @@ import AppRoutes from './routes';
     </Router>,
     document.getElementById('index')
   );
-
+  //registerServiceWorker();

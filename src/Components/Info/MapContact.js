@@ -7,9 +7,7 @@ import markerIcon from '../../images/icons/map_marker_peque.png';
 
 export class MyMapClass extends Component {
 
-
   render() {
-    const { placeName = "QQQQQQQQ" } = this.props;
     const { title = "Queen Victoria Market" } = this.props;
     const { latitud = -37.807579 } = this.props;
     const { longitud = 144.956787 } = this.props;
@@ -27,7 +25,6 @@ export class MyMapClass extends Component {
             onClick={this.onMapClicked}
           >
             <Marker
-              name={placeName}
               title={title}
               position={{ lat: latitud, lng: longitud }}
               icon={{
@@ -47,6 +44,6 @@ export class MyMapClass extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ('AIzaSyCc7Ng1L6NfJGM-KYNrCGjfBGIU6c843EQ')
+  apiKey: ('YOU_API_KEY')
 })(MyMapClass)
 

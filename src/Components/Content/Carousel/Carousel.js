@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
-import myVideo from '../../../videos/forest.mp4'
-
-
-
-//import Responsive from 'react-responsive';
-// const Desktop = props => <Responsive {...props} minWidth={992} />;
-// const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
-// const Mobile = props => <Responsive {...props} maxWidth={480} />;
-// const Default = props => <Responsive {...props} minWidth={768} />;
-import {withGetScreen} from 'react-getscreen'
+import { withGetScreen } from 'react-getscreen'
 
 import {
   Carousel,
@@ -20,20 +11,16 @@ import {
 
 
 //Assets
-// if (this.props.isMobile) {
-  import slider_img1 from '../../../images/sliders/slider_1.jpg'
-  import slider_img2 from '../../../images/sliders/slider_2.jpg'
-  import slider_img3 from '../../../images/sliders/slider_3.jpg'
-// } else {
-  import slider_img1_xs from '../../../images/sliders/slider_1xs.jpg'
-  import slider_img2_xs from '../../../images/sliders/slider_2xs.jpg'
-  import slider_img3_xs from '../../../images/sliders/slider_3xs.jpg'
-// }
+import slider_img1 from '../../../images/sliders/slider_1.jpg'
+import slider_img2 from '../../../images/sliders/slider_2.jpg'
+import slider_img3 from '../../../images/sliders/slider_3.jpg'
+
+import slider_img1_xs from '../../../images/sliders/slider_1xs.jpg'
+import slider_img2_xs from '../../../images/sliders/slider_2xs.jpg'
+import slider_img3_xs from '../../../images/sliders/slider_3xs.jpg'
 
 
-
-
- var items = [
+var items = [
   {
     src: slider_img1,
     altText: 'Slide 1',
@@ -56,24 +43,24 @@ import {
 
 
 var items_xs = [
-{
-  src: slider_img1_xs,
-  altText: 'Slide 1',
-  caption: 'Discover Lodostour',
-  content: 'Site to discover small horizons'
-},
-{
-  src: slider_img2_xs,
-  altText: 'Slide 2',
-  caption: 'Explore Lodostour ',
-  content: 'Place to explore new horizons'
-},
-{
-  src: slider_img3_xs,
-  altText: 'Slide 3',
-  caption: 'Love Lodostour',
-  content: 'Way to love authentic horizons'
-}
+  {
+    src: slider_img1_xs,
+    altText: 'Slide 1',
+    caption: 'Discover Lodostour',
+    content: 'Site to discover small horizons'
+  },
+  {
+    src: slider_img2_xs,
+    altText: 'Slide 2',
+    caption: 'Explore Lodostour ',
+    content: 'Place to explore new horizons'
+  },
+  {
+    src: slider_img3_xs,
+    altText: 'Slide 3',
+    caption: 'Love Lodostour',
+    content: 'Way to love authentic horizons'
+  }
 ];
 
 
@@ -114,9 +101,9 @@ class MyCarousel extends Component {
   }
 
   render() {
-    
-    if(this.props.isMobile()){
-        items = items_xs;
+
+    if (this.props.isMobile()) {
+      items = items_xs;
     }
 
     const { activeIndex } = this.state;
@@ -130,9 +117,9 @@ class MyCarousel extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-         
+
           <div >
-            <CarouselCaption className="left"  captionText={item.content}  captionHeader={item.caption} />
+            <CarouselCaption className="left" captionText={item.content} captionHeader={item.caption} />
             <img src={item.src} alt={item.altText} className="img-responsive rounded-circle" />
             {/* <video className="rounded-circle" id="background-video" loop autoPlay muted>
                             <source src={myVideo} type="video/mp4" />
@@ -161,6 +148,4 @@ class MyCarousel extends Component {
   }
 }
 
-
-// export default MyCarousel;
 export default withGetScreen(MyCarousel);
